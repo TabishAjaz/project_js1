@@ -1,0 +1,114 @@
+.container{
+    display:flex;
+    background-color:white;
+    height: 600px;
+    width:100%;
+    flex-direction: row;
+    
+    
+    
+  
+}
+.box{
+    
+    margin-left: 200px;
+    margin-top: 50px;
+    width: 50%;
+    border: 2px solid white;
+}
+
+.labelDiv{
+    text-align:left;
+    display: flex;
+    margin: 20px;
+}
+.labeDiv label{
+    display: block;
+
+}
+label{
+    font-size: small;
+    margin-left: 20px;
+}
+#lBox{
+    background-color: white;
+    
+
+}
+li{
+    display: inline-block;
+    font-size: medium;
+    text-decoration: none;
+    color: #f3f3f370;;
+    font-weight: bold;
+}
+#image{
+    background-image: url("https://cdn1.ethoswatches.com/pub/media/catalog/product/cache/c9e0b0ef589f3508e5ba515cde53c5ff/c/a/casio-g-shock-gst-s300gl-1adr-large.jpg");
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+input{
+    margin: 5px 10px 5px 10px;
+    font-size: small;
+   
+}
+#rBox{
+    margin-left: 10px;
+    margin-right: 200px;
+    background-color: #f3f3f370;
+}
+th{
+    text-align: left;
+    column-span: 3;
+}
+table{
+   margin-top: 20px;
+   margin-left: 10px;
+}
+td{
+    padding: 10px;
+}
+#btn1,.button{
+   position: relative;
+   left: 30%;
+   background-color: rgb(44, 99, 250);
+   width: 140px;
+   border: blue;
+   height: 25px;
+
+}
+/*------------------------*/
+.foot {
+    padding: 2rem 0;
+    display: flex;
+}
+
+.foot .foot1 {
+    flex: 55%;
+}
+
+.foot .foot2 {
+    flex: 49%;
+}
+
+.foot21 {
+    display: flex;
+    justify-content: space-between;
+}
+ p{
+     font-size: small;
+ }
+ 
+ .radioText{
+     font-size: medium;
+     margin-top: 20px;
+     margin-left: 2px;
+     padding: 10px 0px 10px 0px;
+ }
+ a{
+     text-decoration: none;
+ }

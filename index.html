@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header><ul>
+        <li><a href="index.html">1.Information&ensp; &ensp;</a></li>
+        <li><a href="delivery.html">2.Delivery&ensp; &ensp;</a></li>
+        <li><a href="payment.html">3.Payment&ensp; &ensp;</a></li>
+        <li><a href="confirmation.html">4.Confirmation&ensp; &ensp;</a></li>
+    </ul></header>
+    <main>
+        <div class="container">
+            <div id="lBox" class="box">
+                <h4>Your Details</h4>
+            <form onsubmit=" return validation()"   action="delivery.html" method="POST">
+               <div class="labelDiv"> 
+                   <div>
+                    <label  id="l1" for="fname" >First name </label>
+                    <input type="text" class="input" id="fname" >
+                <span id="textArea1"></span> </div>
+                    <div><label  id="l2" for="lname">last name</label>
+                    <input type="text" class="input" id="lname" ><span id="textArea2"></span></div>
+                </div>
+           
+
+                <div class="labelDiv"> 
+                    <div>
+                    <label id="l5" for="mobile" >Phone Number</label>
+                     <input type="text" class="input" id="mobile" ><span id="textArea3"></span></div>
+                    <div>
+                    <label  id="l6" for="email" >Email</label>
+                    <input type="text" class="input" id="email" ><span id="textArea4"></span></div>
+                </div>
+
+                <div class="labelDiv"> 
+                    <div>
+                    <label id="l7" for="add1" >Address1</label>
+                    <input type="text" class="input" id="add1" ><span id="textArea5"></span></div>
+                    <div>
+                    <label  id="l8" for="add2">Address2</label>
+                    <input type="text" class="input" id="add2" ><span id="textArea6"></span></div>
+                </div>
+
+                <div class="labelDiv"> 
+                    <div>
+                     <label id="l9" for="zip" >Zip code</label>
+                    <input type="text" class="input" id="zip" ><span id="textArea7"></span></div>
+                    <div>
+                    <label  id="l10" for="city" >City </label>
+                    <input type="text" class="input" id="city" ><span id="textArea8"></span></div>
+                </div>
+
+                <div class="labelDiv"> 
+                <div>
+                <label id="l11" for="country" > Country</label>
+                <input type='country' class="input" id="country" ><span id="textArea9"></span></div>
+                <div>
+                <label  id="l12" for="state">State</label>
+                <input type="text" class="input" id="state" ><span id="textArea10"></span></div>
+                </div>
+                <input type="checkbox"><span>my billing address is same as delivery address</span>
+                <br><br><br>
+            
+                <input type="submit" value="Continue to delivery" id="btn1"><br><br><br>
+        </form>
+            </div>
+            <div id="rBox" class="box">
+                <h3>Your Cart</h3>
+                <table>
+                    <tr>
+                        <th rowspan="" id="image"></th>
+                        <th  id="gname">&nbsp;Mens Casio G-Steel <br>
+                            &nbsp;&nbsp;GST-W100G-1BER</th>
+                
+                        <th >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$3749.00</th>
+                    </tr>
+                   
+                    <tr>
+                        <td colspan="2" rowspan="1"> Subtotal</td>
+                        <td>$3749.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" rowspan="1"> Shipping</td>
+                        <td>Calculated at next step</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" rowspan="1"> Taxes (estimated)</td>
+                        <td>$187.45</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" rowspan="1"> Tokens</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" rowspan="1"> Total</td>
+                        <td><h1>$3936.45</h1></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">Delivery <br>
+                            Track the progress of your order in real time</td></tr>
+                    <tr>       
+                        <td colspan="3" rowspan="1">
+                            Return <br>
+                            14 Days money-back returns if you change your mind</td>
+                    </tr>
+                    <tr>       
+                        <td colspan="2" rowspan="1">
+                          <a href="#faq" >Help & FAQs</a>  </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </main>
+    <footer class="foot">
+        <div class="foot1">
+            <p>&copy; 2020 All rights reserved</p>
+        </div>
+        <div class="foot2">
+            <div class="foot21">
+                <div class="cookies">
+                    <a class="dx123" href="">Privacy & Cookies</a>
+                </div>
+                <div class="tandc">
+                    <a class="dx123" href="">Terms & Conditions</a>
+                </div>
+                <div>
+                    <a class="dx123" target="_blank" href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+                </div>
+                <div>
+                    <a class="dx123" target="_blank" href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div>
+                    <a class="dx123" target="_blank" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+<script src="code.js"></script>
+</html>
