@@ -112,3 +112,24 @@ td{
  a{
      text-decoration: none;
  }
+/*-------------------------------------------------------------*/
+@media (max-width:900px ){
+    .container{
+        flex-wrap: wrap;
+        margin-left: 0px;
+        width: 900px;
+        justify-content: flex-start;
+        
+        
+    }
+   #lBox{
+       margin-left: 10px;
+       margin-right: 40px;
+   }
+   footer{
+       position: absolute;
+        top: 1250px;
+       padding: 20px;
+   }
+   
+}
