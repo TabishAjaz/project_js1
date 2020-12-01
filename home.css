@@ -1,9 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
+
 .container{
     display:flex;
     background-color:white;
-    height: 600px;
+    height: auto;
     width:100%;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
+    flex-wrap: nowrap;
     
     
     
@@ -112,7 +120,14 @@ td{
  a{
      text-decoration: none;
  }
-/*------------------------------------------------------------media queries--------------------------------------------------------*/
+ 
+ .textArea{
+     color: red;
+     font-size: small;
+ }
+ 
+
+ /*-------------------------------------------------------------*/
 @media (max-width:900px ){
     .container{
         flex-wrap: wrap;
@@ -131,5 +146,11 @@ td{
         top: 1250px;
        padding: 20px;
    }
-   
+   input{
+       display: block;
+   }
+   #rbox{
+      
+       width: 100%;
+   }
 }
