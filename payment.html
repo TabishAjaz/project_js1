@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
     <link rel="stylesheet" href="home.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +12,7 @@
     <header><ul>
         <li><a href="index.html">1.Information&ensp; &ensp;</a></li>
         <li><a href="delivery.html">2.Delivery&ensp; &ensp;</a></li>
-        <li><a href="payment.html">3.Payment&ensp; &ensp;</a></li>
+        <li><a href="payment.html" style="color: blue;">3.Payment&ensp; &ensp;</a></li>
         <li><a href="confirmation.html">4.Confirmation&ensp; &ensp;</a></li>
     </ul></header>
     <main>
@@ -35,7 +37,7 @@
                    </form>
             </div>
             <div id="rBox" class="box">
-                <h3>Your Cart</h3>
+                <span> <h3 style="padding: 5px;">Your Cart <a href="index.html" style="float: right; font-size:small; padding:5px; text-decoration:underline">Edit</a></h3></span>
                 <table>
                     <tr>
                         <th rowspan="" id="image"></th>
@@ -62,17 +64,16 @@
                         <td colspan="2" rowspan="1"> Total</td>
                         <td><h1>$3936.45</h1></td>
                     </tr>
-                    <tr>
-                        <td colspan="3" rowspan="1">Delivery <br>
+                    <tr><td colspan="1"><i class="fas fa-truck" style="padding: 10px;"></i></td>
+                        <td colspan="3" rowspan="1" ><h4 style="padding: 0px; margin:0px;">Delivery</h4>
                             Track the progress of your order in real time</td></tr>
-                    <tr>       
+                    <tr><td><i class="fas fa-redo"></i></td>   
                         <td colspan="3" rowspan="1">
-                            Return <br>
-                            14 Days money-back returns if you change your mind</td>
+                            <h4 style="padding: 0px; margin:0px;">Return</h4>14 Days money-back returns if you change your mind</td>
                     </tr>
                     <tr>       
                         <td colspan="2" rowspan="1">
-                          <a href="#faq" >Help & FAQs</a>  </td>
+                          <a href="#faq" style="text-decoration: underline;">Help & FAQs</a>  </td>
                     </tr>
                 </table>
             </div>
