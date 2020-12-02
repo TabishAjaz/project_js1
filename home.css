@@ -1,56 +1,66 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-
-.container{
-    display:flex;
-    background-color:white;
+.container {
+    display: flex;
+    background-color: white;
     height: auto;
-    width:100%;
+    width: 80%;
+    font-family: 'Castoro', serif;
+    ;
+    margin: auto;
     justify-content: center;
-    align-items: center;
+    padding: 0px 30px 10px 30px;
     flex-direction: row;
     flex-wrap: nowrap;
-    
-    
-    
-  
 }
-.box{
-    
-    margin-left: 200px;
-    margin-top: 50px;
+
+.labelDiv input,
+select {
+    margin: 0px 20px;
+}
+
+.labelDiv label {
+    margin: 20px;
+    font-family: 'Castoro', serif;
+    ;
+}
+
+.labelDiv {
+    padding: 10px 10px;
+}
+
+.box {
+    max-width: 700px;
+    min-width: 500px;
+    margin-top: 0px;
     width: 50%;
     border: 2px solid white;
 }
 
-.labelDiv{
-    text-align:left;
-    display: flex;
-    margin: 20px;
+select {
+    padding: 3px;
 }
-.labeDiv label{
-    display: block;
 
-}
-label{
+label {
     font-size: small;
-    margin-left: 20px;
 }
-#lBox{
-    background-color: white;
-    
 
+#lBox {
+    background-color: white;
 }
-li{
+
+li {
     display: inline-block;
     font-size: medium;
     text-decoration: none;
-    color: #f3f3f370;;
+    color: #f3f3f370;
+    ;
     font-weight: bold;
 }
-#image{
+
+#image {
     background-image: url("https://cdn1.ethoswatches.com/pub/media/catalog/product/cache/c9e0b0ef589f3508e5ba515cde53c5ff/c/a/casio-g-shock-gst-s300gl-1adr-large.jpg");
     width: 80px;
     height: 80px;
@@ -59,37 +69,38 @@ li{
     margin-left: 20px;
     margin-top: 10px;
 }
-input{
-    margin: 5px 10px 5px 10px;
-    font-size: small;
-   
-}
-#rBox{
-    margin-left: 10px;
-    margin-right: 200px;
+
+#rBox {
     background-color: #f3f3f370;
 }
-th{
+
+th {
     text-align: left;
     column-span: 3;
 }
-table{
-   margin-top: 20px;
-   margin-left: 10px;
+
+table {
+    margin-top: 20px;
+    margin-left: 10px;
 }
-td{
+
+td {
     padding: 10px;
 }
-#btn1,.button{
-   position: relative;
-   left: 30%;
-   background-color: rgb(44, 99, 250);
-   width: 140px;
-   border: blue;
-   height: 25px;
 
+#btn1,
+.button {
+    position: relative;
+    left: 30%;
+    background-color: rgb(44, 99, 250);
+    width: 140px;
+    border: blue;
+    height: 25px;
 }
+
+
 /*------------------------*/
+
 .foot {
     padding: 2rem 0;
     display: flex;
@@ -107,50 +118,49 @@ td{
     display: flex;
     justify-content: space-between;
 }
- p{
-     font-size: small;
- }
- 
- .radioText{
-     font-size: medium;
-     margin-top: 20px;
-     margin-left: 2px;
-     padding: 10px 0px 10px 0px;
- }
- a{
-     text-decoration: none;
- }
- 
- .textArea{
-     color: red;
-     font-size: small;
- }
- 
 
- /*-------------------------------------------------------------*/
-@media (max-width:900px ){
-    .container{
+p {
+    font-size: small;
+}
+
+.radioText {
+    font-size: medium;
+    margin-top: 20px;
+    margin-left: 2px;
+    padding: 10px 0px 10px 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.textArea {
+    color: red;
+    font-size: small;
+}
+
+
+/*-------------------------------------------------------------*/
+
+@media (max-width:900px) {
+    body {
+        padding: 1rem;
+    }
+    .container {
         flex-wrap: wrap;
         margin-left: 0px;
-        width: 900px;
+        width: auto;
         justify-content: flex-start;
-        
-        
     }
-   #lBox{
-       margin-left: 10px;
-       margin-right: 40px;
-   }
-   footer{
-       position: absolute;
-        top: 1250px;
-       padding: 20px;
-   }
-   input{
-       display: block;
-   }
-   #rbox{
-      
-       width: 100%;
-   }
+    #lBox {
+        margin-left: 10px;
+        margin-right: 40px;
+    }
+    footer {
+        visibility: hidden;
+    }
+}
+
+#rbox {
+    width: 100%;
 }
