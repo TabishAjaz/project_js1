@@ -116,7 +116,7 @@ function validation(){
     }
    
 
-}
+};
 function info(){
     inFo="d";
     var fName=document.getElementById("fname").value;
@@ -133,16 +133,21 @@ function info(){
     document.getElementById("in").innerHTML=inFo;
 
  
-}
-function pay(){
-    var deb=document.getElementById("debit").value;
-    var cred=document.getElementById("credit").value;
-    var bank=document.getElementById("bankAccount").value;
-    var upi=document.getElementById("upi").value;
-    if(deb||cred||bank||upi){
-        return true;
-    }
-    else{
-        return false;
-    }
-}
+};
+paypal.addEventListener('change', ($event) => {
+    tokens.checked = false;
+    bankTransfer.checked = false;
+});
+
+tokens.addEventListener('change', ($event) => {
+
+    paypal.checked = false;
+    bankTransfer.checked = false;
+
+});
+
+bankTransfer.addEventListener('change', ($event) => {
+    tokens.checked = false;
+    paypal.checked = false;
+
+});
